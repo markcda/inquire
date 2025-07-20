@@ -21,4 +21,4 @@ rustdoc-args = ["--cfg", "docsrs"]
 [dependencies]
 
 [dev-dependencies]
-inquire = { path = "../inquire" }
+inquire-reorder = { path = "../inquire" }
