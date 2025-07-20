@@ -1,28 +1,29 @@
 [package]
-name = "inquire"
-version = "0.7.5"
+name = "inquire-reorder"
+version = "0.7.6-beta.1"
 description = "inquire is a library for building interactive prompts on terminals"
-repository = "https://github.com/mikaelmello/inquire"
+repository = "https://github.com/markcda/inquire"
 license = "MIT"
 edition = "2018"
 readme = "./CRATE_README.md"
 documentation = "https://docs.rs/inquire"
 homepage = "https://github.com/mikaelmello/inquire"
-authors = ["Mikael Mello <git@mikaelmello.com>"]
+authors = ["Mikael Mello <git@mikaelmello.com>", "Klimenty Titov <aclo.create@gmail.com>"]
 keywords = ["cli", "ask", "prompt", "question", "interactive"]
 categories = ["command-line-interface", "value-formatting"]
 include = ["/examples", "/src", "/../LICENSE"]
 rust-version = "1.66.0"
 
 [lib]
-name = "inquire"
+name = "inquire-reorder"
 path = "src/lib.rs"
 doctest = true
 
 [features]
-default = ["macros", "crossterm", "one-liners", "fuzzy"]
+default = ["macros", "crossterm", "one-liners", "fuzzy", "reorder"]
 macros = []
 one-liners = []
+reorder = []
 date = ["chrono"]
 editor = ["tempfile"]
 fuzzy = ["fuzzy-matcher"]
