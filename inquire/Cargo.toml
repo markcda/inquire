@@ -15,7 +15,7 @@ include = ["/examples", "/src", "/../LICENSE"]
 rust-version = "1.66.0"
 
 [lib]
-name = "inquire-reorder"
+name = "inquire_reorder"
 path = "src/lib.rs"
 doctest = true
 
